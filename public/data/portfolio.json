@@ -1,0 +1,307 @@
+{
+	"personal": {
+		"name": "Harshit Tibrewal",
+		"title": "Full Stack Developer",
+		"email": "harshittibrewal11@gmail.com",
+		"phone": "(+91) 7001368116",
+		"location": "Bengaluru, India",
+		"summary": "Passionate Full Stack Developer with 1.5 years of experience building scalable web applications. Specialized in creating elegant solutions to complex problems with modern technologies.",
+		"tagline": "Crafting digital experiences that matter",
+		"profileImage": "/images/Profile.jpg",
+		"resume": "/files/HarshitTibrewal_React_Developer.pdf"
+	},
+	"socialLinks": [
+		{
+			"platform": "LinkedIn",
+			"url": "https://linkedin.com/in/HarshitTib",
+			"icon": "linkedin"
+		},
+		{
+			"platform": "GitHub",
+			"url": "https://github.com/HarshitTib",
+			"icon": "github"
+		},
+		{
+			"platform": "Leetcode",
+			"url": "https://leetcode.com/u/HarshitTibrewal",
+			"icon": "leetcode"
+		},
+		{
+			"platform": "Email",
+			"url": "mailto:harshittibrewal11@gmail.com",
+			"icon": "mail"
+		}
+	],
+	"skills": [
+		{
+			"category": "Frontend",
+			"technologies": [
+				{
+					"name": "React",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+				},
+				{
+					"name": "Next.js",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+				},
+				{
+					"name": "TypeScript",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+				},
+				{
+					"name": "Tailwind CSS",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+				},
+				{
+					"name": "JavaScript",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+				},
+				{
+					"name": "HTML5/CSS3",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+				},
+				{
+					"name": "Redux",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+				},
+				{
+					"name": "REST APIs",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+				}
+			]
+		},
+		{
+			"category": "Backend",
+			"technologies": [
+				{
+					"name": "Node.js",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+				},
+				{
+					"name": "Express.js",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+				},
+				{
+					"name": "PostgreSQL",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+				},
+				{
+					"name": "MongoDB",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+				},
+				{
+					"name": "OracleDB",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+				},
+				{
+					"name": "Firebase",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+				},
+				{
+					"name": "RESTful APIs",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+				},
+				{
+					"name": "Authentication",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+				},
+				{
+					"name": "Database Design",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+				}
+			]
+		},
+		{
+			"category": "Tools & Platforms",
+			"technologies": [
+				{
+					"name": "Git & GitHub",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+				},
+				{
+					"name": "VS Code",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+				},
+				{
+					"name": "Postman",
+					"logo": "https://cdn.jsdelivr.net/npm/simple-icons@7.19.0/icons/postman.svg"
+				},
+				{
+					"name": "Vercel",
+					"logo": "https://cdn.jsdelivr.net/npm/simple-icons@7.19.0/icons/vercel.svg"
+				},
+				{
+					"name": "Netlify",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg"
+				},
+				{
+					"name": "npm/yarn",
+					"logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+				}
+			]
+		}
+	],
+	"experience": [
+		{
+			"role": "Engineer",
+			"company": "IDFC FIRST BANK",
+			"companyWebsite": "https://www.idfcfirstbank.com",
+			"duration": "June 2024 - November 2024",
+			"startDate": "2024-06-10",
+			"endDate": "2025-11-21",
+			"description": "Contributing to the development of Thanos, an automated testing and regression platform, by designing scalable backend systems and interactive UI dashboards to enhance efficiency, stability, and user experience in large-scale QA operations.",
+			"skillsUsed": [
+				"Python",
+				"React",
+				"Next.js",
+				"Oracle SQL",
+				"Node.js",
+				"REST APIs",
+				"TypeScript",
+				"GIT",
+				"Bitbucket",
+				"JIRA"
+			],
+			"achievements": [
+				"Reduced regression execution time by 80% (5 hrs → 1 hr) by architecting a scalable backend model using Python and Oracle SQL for parallel API execution.",
+				"Built a React + Next.js UI framework enabling upload of 50+ test suites, automation of 100+ API calls, and visualization of test results through dynamic graphs.",
+				"Resolved 20+ onboarding issues, implementing optimized fixes that improved platform stability and reduced recurring defects by ~40%."
+			]
+		},
+		{
+			"role": "Engineer Intern",
+			"company": "IDFC FIRST BANK",
+			"companyWebsite": "https://www.idfcfirstbank.com",
+			"duration": "February 2024 - June 2024",
+			"startDate": "2024-02-01",
+			"endDate": "2024-06-10",
+			"description": "Contributed to automation and optimization initiatives within the QA team by developing data-driven frameworks and intelligent clustering models to streamline regression testing and improve code efficiency.",
+			"skillsUsed": ["Python", "SQL", "Selenium", "Playwright", "JavaScript"],
+			"achievements": [
+				"Designed a Python + SQL Directed Acyclic Graph (DAG) to cluster 10,000+ test cases, grouping sequential flows (e.g., ABC, ABCD) while separating non-sequential ones (e.g., ABC, ACB), reducing redundancy by 30%.",
+				"Developed a fully automated regression suite using Selenium and Playwright, minimizing manual testing and saving approximately 6 hours per week, improving overall test coverage and efficiency.",
+				"Improved test coverage from 40% to 75%"
+			]
+		},
+		{
+			"role": "Web Development Intern",
+			"company": "5centsCDN",
+			"companyWebsite": "https://www.5centscdn.net/",
+			"duration": "September 2023 - February 2024",
+			"startDate": "2023-09-01",
+			"endDate": "2024-02-28",
+			"description": "Contributed to the modernization of the company's web platform by migrating legacy architecture to a full-stack Next.js environment, focusing on performance optimization, scalability, and maintainable code structure.",
+			"skillsUsed": [
+				"Next.js",
+				"ReactJS",
+				"TypeScript",
+				"MongoDB",
+				"Node.js",
+				"Tailwind CSS",
+				"GIT",
+				"Github"
+			],
+			"achievements": [
+				"Spearheaded the migration of the organization's core website to Next.js, leveraging ReactJS, TypeScript, MongoDB, and Node.js, resulting in a 40% reduction in render time and improved overall performance.",
+				"Led integration and migration initiatives, implemented reusable components, enforced code quality through reviews, and enhanced site responsiveness by 15%, delivering the project one week ahead of schedule.",
+				"Learned React, JavaScript, and CSS in a real-world environment"
+			]
+		}
+	],
+	"projects": [
+		{
+			"title": "ScanIt",
+			"description": "A modular QR code-based restaurant management system enabling real-time order tracking, group table ordering, and unified billing. Designed to streamline restaurant operations and reduce waiter dependency using real-time updates and role-based access control.",
+			"technologies": [
+				"Next.js",
+				"ReactJS",
+				"Node.js",
+				"MongoDB",
+				"Tailwind CSS",
+				"Redux",
+				"TypeScript",
+				"Git",
+				"GitHub"
+			],
+			"link": "https://github.com/ScanItDevs/scanit",
+			"liveDemo": "https://scanit-git-staging-scanitdevs-projects.vercel.app/customer/67ea40b3c8bf1efa35dfc15a/1"
+		},
+		{
+			"title": "StockSage",
+			"description": "A comprehensive trading and analytics platform integrating Upstox accounts and processing 15 years of historical data from AlphaVantage to predict future stock price trends. Features include dynamic charting, portfolio tracking, and data-driven insights for informed investment decisions.",
+			"technologies": [
+				"Next.js",
+				"ReactJS",
+				"Tailwind CSS",
+				"TypeScript",
+				"MongoDB",
+				"Upstox API",
+				"Python",
+				"Git"
+			],
+			"link": "https://github.com/reallySleepless/stocksage"
+		},
+		{
+			"title": "Chess Game",
+			"description": "An interactive online chess platform implementing move validation, checkmate detection, and robust state management to handle complex game logic and over 59 billion possible game states, delivering a smooth and engaging user experience.",
+			"technologies": ["HTML", "CSS", "ReactJS", "JavaScript", "Git", "GitHub"],
+			"link": "https://github.com/HarshitTib/chess",
+			"liveDemo": "https://chess-harshit.vercel.app/"
+		}
+	],
+	"education": [
+		{
+			"institution": "Cambridge Institute of Technology",
+			"degree": "Bachelor of Engineering  (B.E.)",
+			"field": "Computer Science and Engineering",
+			"year": "2024",
+			"gpa": "9.1/10.0"
+		},
+		{
+			"institution": "St. Joseph's School, Bhaktinagar",
+			"degree": "ISC Board - Class XII",
+			"field": "Science",
+			"year": "2020",
+			"gpa": "90/100"
+		},
+		{
+			"institution": "St. Joseph's School, Bhaktinagar",
+			"degree": "ICSE Board - Class X",
+			"field": "Computer",
+			"year": "2018",
+			"gpa": "92/100"
+		}
+	],
+	"achievements": [
+		{
+			"title": "Certificate of Excellence in Samsung Prism Internship",
+			"issuer": "Samsung India",
+			"date": "2023",
+			"description": "Comprehensive certification covering React, Node.js, and MongoDB - mastering the MERN stack"
+		},
+		{
+			"title": "Open Technology Day Winner - Innovation Prize",
+			"issuer": "Cambridge Institute of Technology",
+			"date": "2022",
+			"description": "Won first place in innovation category for developing an AR Video Controller."
+		},
+		{
+			"title": "Hackathon In College - Runner Up",
+			"issuer": "Cambridge Institute of Technology",
+			"date": "2022",
+			"description": "Department-level College Competition for developing a Football League System."
+		},
+		{
+			"title": "Operation Lead",
+			"issuer": "Under25 Cultural Festival",
+			"date": "2022",
+			"description": "Managing the entire events operations team of 50+ members, coordinating logistics, and ensuring smooth execution of cultural festival activities"
+		},
+		{
+			"title": "Team Leadership Award",
+			"issuer": "Samsung Prism",
+			"date": "2022",
+			"description": "Awarded for exceptional performance, outstanding code quality, and collaborative teamwork"
+		}
+	]
+}
