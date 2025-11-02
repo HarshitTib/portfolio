@@ -41,7 +41,8 @@ export default function Skills({ skills }: SkillsProps) {
 						My Tech Stack
 					</h2>
 					<p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-						A curated collection of technologies I use to build beautiful, scalable, and performant applications
+						A curated collection of technologies I use to build beautiful,
+						scalable, and performant applications
 					</p>
 					<div className="w-12 sm:w-20 h-1 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto mt-6 rounded-full"></div>
 				</div>
@@ -58,7 +59,8 @@ export default function Skills({ skills }: SkillsProps) {
 								{/* Gradient border effect on hover */}
 								<div
 									className={`absolute inset-0 rounded-2xl bg-linear-to-br ${
-										skillColors[skill.category]?.gradient || "from-gray-400 to-gray-500"
+										skillColors[skill.category]?.gradient ||
+										"from-gray-400 to-gray-500"
 									} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
 								></div>
 
@@ -69,7 +71,8 @@ export default function Skills({ skills }: SkillsProps) {
 										<div className="flex-1">
 											<div
 												className={`w-12 h-12 rounded-xl bg-linear-to-br ${
-													skillColors[skill.category]?.gradient || "from-gray-400 to-gray-500"
+													skillColors[skill.category]?.gradient ||
+													"from-gray-400 to-gray-500"
 												} mb-4 flex items-center justify-center text-xl shadow-lg group-hover:scale-110 transition-transform duration-300`}
 											>
 												{skillColors[skill.category]?.icon || "🚀"}
@@ -199,7 +202,9 @@ export default function Skills({ skills }: SkillsProps) {
 												fill="none"
 												stroke="url(#gradient)"
 												strokeWidth="8"
-												strokeDasharray={`${(skill.level / 100) * 2 * Math.PI * 54} ${2 * Math.PI * 54}`}
+												strokeDasharray={`${
+													(skill.level / 100) * 2 * Math.PI * 54
+												} ${2 * Math.PI * 54}`}
 												strokeLinecap="round"
 												className="transition-all duration-1000 ease-out group-hover:stroke-width-10"
 											/>
@@ -217,12 +222,12 @@ export default function Skills({ skills }: SkillsProps) {
 															skill.color.includes("blue")
 																? "#3b82f6"
 																: skill.color.includes("green")
-																	? "#10b981"
-																	: skill.color.includes("purple")
-																		? "#a855f7"
-																		: skill.color.includes("yellow")
-																			? "#eab308"
-																			: "#ef4444"
+																? "#10b981"
+																: skill.color.includes("purple")
+																? "#a855f7"
+																: skill.color.includes("yellow")
+																? "#eab308"
+																: "#ef4444"
 														}
 													/>
 													<stop
@@ -231,12 +236,12 @@ export default function Skills({ skills }: SkillsProps) {
 															skill.color.includes("cyan")
 																? "#06b6d4"
 																: skill.color.includes("emerald")
-																	? "#059669"
-																	: skill.color.includes("pink")
-																		? "#ec4899"
-																		: skill.color.includes("orange")
-																			? "#f97316"
-																			: "#dc2626"
+																? "#059669"
+																: skill.color.includes("pink")
+																? "#ec4899"
+																: skill.color.includes("orange")
+																? "#f97316"
+																: "#dc2626"
 														}
 													/>
 												</linearGradient>
