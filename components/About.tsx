@@ -21,7 +21,7 @@ export default function About({ personal }: AboutProps) {
 					<div className="w-12 sm:w-16 h-1 bg-linear-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
 					<div className="animate-fade-in-left order-2 md:order-1">
 						<p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-4 sm:mb-6 leading-relaxed animate-fade-in-up">
 							{personal.summary}
@@ -76,56 +76,59 @@ export default function About({ personal }: AboutProps) {
 						</div>
 					</div>
 
-					<div className="relative animate-fade-in-right order-1 md:order-2 flex justify-center">
-						<div className="w-full max-w-xs sm:max-w-sm md:max-w-none">
+					<div className="relative animate-fade-in-right order-1 md:order-2 flex justify-center items-center">
+						<div className="w-full max-w-md sm:max-w-lg">
 							{personal.profileImage ? (
 								<div className="relative group">
 									{/* Animated border glow */}
-									<div className="absolute -inset-0.5 sm:-inset-1 bg-linear-to-br from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-glow"></div>
+									<div className="absolute -inset-1 sm:-inset-2 bg-linear-to-br from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-glow"></div>
 
-									{/* Image container */}
-									<div className="relative w-full h-64 sm:h-80 md:h-96 rounded-3xl overflow-hidden bg-linear-to-br from-blue-500 to-purple-600 shadow-2xl flex items-center justify-center">
-										{!imageError && (
-											<Image
-												src={personal.profileImage}
-												alt={personal.name}
-												fill
-												className="object-cover object-center hover:scale-110 transition-transform duration-500"
-												priority
-												onError={() => setImageError(true)}
-												sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 45vw, 33vw"
-											/>
-										)}
-										{imageError && (
-											<div className="w-full h-full flex items-center justify-center bg-linear-to-br from-blue-500 to-purple-600">
-												<div className="text-center">
-													<div className="text-6xl sm:text-7xl md:text-8xl mb-4">
-														👨‍💻
+									{/* Outer frame - Premium look */}
+									<div className="relative bg-white dark:bg-slate-800 rounded-3xl p-2 sm:p-3 shadow-2xl">
+										{/* Image container with aspect ratio */}
+										<div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-linear-to-br from-blue-500 to-purple-600 shadow-lg flex items-center justify-center">
+											{!imageError && (
+												<Image
+													src={personal.profileImage}
+													alt={personal.name}
+													fill
+													className="object-cover object-top hover:scale-105 transition-transform duration-500"
+													priority
+													onError={() => setImageError(true)}
+													sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 500px, 600px"
+												/>
+											)}
+											{imageError && (
+												<div className="w-full h-full flex items-center justify-center bg-linear-to-br from-blue-500 to-purple-600">
+													<div className="text-center">
+														<div className="text-6xl sm:text-7xl mb-4">👨‍💻</div>
+														<p className="text-white text-sm sm:text-base font-semibold">
+															Add your profile picture
+														</p>
 													</div>
-													<p className="text-white text-lg font-semibold">
-														Add your profile picture
-													</p>
 												</div>
-											</div>
-										)}
+											)}
+										</div>
 									</div>
 								</div>
 							) : (
 								<div className="relative group">
 									{/* Fallback gradient box */}
-									<div className="absolute -inset-0.5 sm:-inset-1 bg-linear-to-br from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-glow"></div>
+									<div className="absolute -inset-1 sm:-inset-2 bg-linear-to-br from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-glow"></div>
 
-									<div className="relative w-full h-64 sm:h-80 md:h-96 bg-linear-to-br from-blue-500 to-purple-600 rounded-3xl flex items-center justify-center shadow-2xl">
-										<div className="text-center px-4">
-											<div className="text-6xl sm:text-7xl md:text-8xl mb-4 animate-float">
-												👨‍💻
+									<div className="relative bg-white dark:bg-slate-800 rounded-3xl p-2 sm:p-3 shadow-2xl">
+										<div className="relative w-full aspect-square bg-linear-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+											<div className="text-center px-4">
+												<div className="text-6xl sm:text-7xl mb-4 animate-float">
+													👨‍💻
+												</div>
+												<p className="text-white text-sm sm:text-base font-semibold">
+													Add your profile picture
+												</p>
+												<p className="text-blue-200 text-xs sm:text-sm mt-2">
+													Update profileImage in portfolio.json
+												</p>
 											</div>
-											<p className="text-white text-base sm:text-lg font-semibold">
-												Add your profile picture
-											</p>
-											<p className="text-blue-200 text-xs sm:text-sm mt-2">
-												Update profileImage in portfolio.json
-											</p>
 										</div>
 									</div>
 								</div>
