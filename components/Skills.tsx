@@ -8,9 +8,9 @@ interface SkillsProps {
 
 export default function Skills({ skills }: SkillsProps) {
 	const skillColors: { [key: string]: { gradient: string; icon: string } } = {
-		Frontend: { gradient: "from-blue-400 to-cyan-500", icon: "🎨" },
-		Backend: { gradient: "from-purple-400 to-pink-500", icon: "⚙️" },
-		"Tools & Platforms": { gradient: "from-green-400 to-teal-500", icon: "🛠️" },
+		Frontend: { gradient: "from-emerald-400 to-teal-500", icon: "🎨" },
+		Backend: { gradient: "from-amber-400 to-orange-500", icon: "⚙️" },
+		"Tools & Platforms": { gradient: "from-teal-400 to-cyan-500", icon: "🛠️" },
 	};
 
 	return (
@@ -20,9 +20,9 @@ export default function Skills({ skills }: SkillsProps) {
 		>
 			{/* Animated background orbs */}
 			<div className="absolute inset-0 overflow-hidden pointer-events-none">
-				<div className="absolute -top-20 -right-20 w-72 h-72 bg-blue-400/5 rounded-full blur-3xl animate-float"></div>
+				<div className="absolute -top-20 -right-20 w-72 h-72 bg-emerald-400/5 rounded-full blur-3xl animate-float"></div>
 				<div
-					className="absolute -bottom-20 -left-20 w-72 h-72 bg-purple-400/5 rounded-full blur-3xl animate-float"
+					className="absolute -bottom-20 -left-20 w-72 h-72 bg-amber-400/5 rounded-full blur-3xl animate-float"
 					style={{ animationDelay: "2s" }}
 				></div>
 				<div
@@ -34,7 +34,7 @@ export default function Skills({ skills }: SkillsProps) {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				{/* Header */}
 				<div className="text-center mb-16 sm:mb-20 animate-fade-in-down">
-					<span className="inline-block px-4 py-2 mb-4 text-xs sm:text-sm font-semibold text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 uppercase tracking-wide">
+					<span className="inline-block px-4 py-2 mb-4 text-xs sm:text-sm font-semibold text-transparent bg-clip-text bg-linear-to-r from-emerald-600 to-amber-600 dark:from-emerald-400 dark:to-amber-400 uppercase tracking-wide">
 						💡 Technology & Expertise
 					</span>
 					<h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -44,9 +44,8 @@ export default function Skills({ skills }: SkillsProps) {
 						A curated collection of technologies I use to build beautiful,
 						scalable, and performant applications
 					</p>
-					<div className="w-12 sm:w-20 h-1 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto mt-6 rounded-full"></div>
-				</div>
-
+					<div className="w-12 sm:w-20 h-1 bg-linear-to-r from-emerald-500 via-teal-500 to-amber-600 mx-auto mt-6 rounded-full"></div>
+				</div>{" "}
 				{/* Tech Stack Cards */}
 				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16 sm:mb-20">
 					{skills.map((skill, index) => (
@@ -112,9 +111,9 @@ export default function Skills({ skills }: SkillsProps) {
 															/>
 														</div>
 													) : (
-														<div className="w-2 h-2 rounded-full bg-linear-to-r from-blue-400 to-purple-500 shrink-0"></div>
+														<div className="w-2 h-2 rounded-full bg-linear-to-r from-emerald-400 to-amber-500 shrink-0"></div>
 													)}
-													<span className="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-medium group-hover/tech:text-transparent group-hover/tech:bg-clip-text group-hover/tech:bg-linear-to-r group-hover/tech:from-blue-600 group-hover/tech:to-purple-600 transition-all">
+													<span className="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-medium group-hover/tech:text-transparent group-hover/tech:bg-clip-text group-hover/tech:bg-linear-to-r group-hover/tech:from-emerald-600 group-hover/tech:to-amber-600 transition-all">
 														{techName}
 													</span>
 												</div>
@@ -126,7 +125,6 @@ export default function Skills({ skills }: SkillsProps) {
 						</div>
 					))}
 				</div>
-
 				{/* Proficiency Levels - Circular */}
 				<div className="animate-fade-in-up">
 					<div className="mb-12">
@@ -136,7 +134,7 @@ export default function Skills({ skills }: SkillsProps) {
 						<p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
 							My skill level across key technologies and frameworks
 						</p>
-						<div className="w-12 h-1 bg-linear-to-r from-blue-500 to-purple-600 rounded-full mt-4"></div>
+						<div className="w-12 h-1 bg-linear-to-r from-emerald-500 to-amber-600 rounded-full mt-4"></div>
 					</div>
 
 					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
@@ -144,32 +142,32 @@ export default function Skills({ skills }: SkillsProps) {
 							{
 								name: "React & Next.js",
 								level: 90,
-								color: "from-blue-500 to-cyan-500",
+								color: "from-emerald-500 to-teal-500",
 							},
 							{
 								name: "TypeScript",
 								level: 85,
-								color: "from-blue-600 to-blue-400",
+								color: "from-emerald-600 to-emerald-400",
 							},
 							{
 								name: "Node.js & Express",
 								level: 85,
-								color: "from-green-500 to-emerald-500",
+								color: "from-amber-500 to-orange-500",
 							},
 							{
 								name: "Database Design",
 								level: 80,
-								color: "from-purple-500 to-pink-500",
+								color: "from-teal-500 to-cyan-500",
 							},
 							{
 								name: "UI/UX Implementation",
 								level: 85,
-								color: "from-yellow-500 to-orange-500",
+								color: "from-amber-400 to-orange-500",
 							},
 							{
 								name: "DevOps & Deployment",
 								level: 50,
-								color: "from-red-500 to-orange-500",
+								color: "from-orange-500 to-amber-500",
 							},
 						].map((skill, index) => (
 							<div

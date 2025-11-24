@@ -35,7 +35,7 @@ export default function Footer({ personal }: FooterProps) {
 									<li key={link}>
 										<a
 											href={`#${link.toLowerCase()}`}
-											className="text-gray-400 hover:text-blue-400 transition-colors"
+											className="text-gray-400 hover:text-emerald-400 transition-colors"
 										>
 											{link}
 										</a>
@@ -55,7 +55,7 @@ export default function Footer({ personal }: FooterProps) {
 						</p>
 						<a
 							href={`mailto:${personal.email}`}
-							className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold rounded transition-colors"
+							className="inline-block px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold rounded transition-colors"
 						>
 							Get In Touch
 						</a>

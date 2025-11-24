@@ -22,7 +22,7 @@ export default function Achievements({ achievements }: AchievementsProps) {
 					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
 						Achievements & Certifications
 					</h2>
-					<div className="w-12 sm:w-16 h-1 bg-linear-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
+					<div className="w-12 sm:w-16 h-1 bg-linear-to-r from-emerald-500 to-amber-600 mx-auto rounded-full"></div>
 				</div>
 
 				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -33,14 +33,14 @@ export default function Achievements({ achievements }: AchievementsProps) {
 							style={{ animationDelay: `${index * 100}ms` }}
 						>
 							{/* Background gradient on hover */}
-							<div className="absolute inset-0 bg-linear-to-br from-blue-500/10 to-purple-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+							<div className="absolute inset-0 bg-linear-to-br from-emerald-500/10 to-amber-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
 							<div className="relative z-10">
 								<div className="flex items-start justify-between mb-4">
 									<div className="text-3xl sm:text-4xl animate-float">
 										{achievementIcons[achievement.title.split(" ")[0]] || "⭐"}
 									</div>
-									<span className="text-xs font-bold text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/30 px-2 py-1 rounded">
+									<span className="text-xs font-bold text-amber-600 dark:text-amber-400 bg-amber-100 dark:bg-amber-900/30 px-2 py-1 rounded">
 										{achievement.date}
 									</span>
 								</div>
@@ -49,7 +49,7 @@ export default function Achievements({ achievements }: AchievementsProps) {
 									{achievement.title}
 								</h3>
 
-								<p className="text-xs sm:text-sm text-blue-600 dark:text-blue-400 font-semibold mb-3">
+								<p className="text-xs sm:text-sm text-emerald-600 dark:text-emerald-400 font-semibold mb-3">
 									{achievement.issuer}
 								</p>
 
@@ -58,7 +58,7 @@ export default function Achievements({ achievements }: AchievementsProps) {
 								</p>
 
 								{/* Decorative border */}
-								<div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-blue-500 via-purple-500 to-transparent rounded-b-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+								<div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-emerald-500 via-amber-500 to-transparent rounded-b-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
 							</div>
 						</div>
 					))}
@@ -73,10 +73,10 @@ export default function Achievements({ achievements }: AchievementsProps) {
 					].map((stat, index) => (
 						<div
 							key={index}
-							className="text-center p-4 sm:p-6 bg-linear-to-br from-blue-500/20 to-purple-500/20 rounded-xl border border-blue-200/50 dark:border-purple-400/50 animate-scale-in"
+							className="text-center p-4 sm:p-6 bg-linear-to-br from-emerald-500/20 to-amber-500/20 rounded-xl border border-emerald-200/50 dark:border-amber-400/50 animate-scale-in"
 							style={{ animationDelay: `${index * 150}ms` }}
 						>
-							<div className="text-2xl sm:text-4xl font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+							<div className="text-2xl sm:text-4xl font-bold bg-linear-to-r from-emerald-600 to-amber-600 bg-clip-text text-transparent mb-2">
 								{stat.value}
 							</div>
 							<p className="text-xs sm:text-base text-gray-700 dark:text-gray-300 font-semibold">

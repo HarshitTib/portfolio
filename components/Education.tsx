@@ -16,7 +16,7 @@ export default function Education({ education }: EducationProps) {
 					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
 						Education
 					</h2>
-					<div className="w-12 sm:w-16 h-1 bg-linear-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
+					<div className="w-12 sm:w-16 h-1 bg-linear-to-r from-emerald-500 to-amber-600 mx-auto rounded-full"></div>
 				</div>
 
 				<div className="grid sm:grid-cols-2 gap-4 sm:gap-8">
@@ -26,14 +26,14 @@ export default function Education({ education }: EducationProps) {
 							className="relative group animate-fade-in-up"
 							style={{ animationDelay: `${index * 100}ms` }}
 						>
-							<div className="absolute inset-0 bg-linear-to-r from-blue-500/20 to-purple-500/20 rounded-xl blur group-hover:blur-xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
+							<div className="absolute inset-0 bg-linear-to-r from-emerald-500/20 to-amber-500/20 rounded-xl blur group-hover:blur-xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
 							<div className="relative bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-700 rounded-xl p-4 sm:p-8 shadow-lg group-hover:shadow-xl transition-all">
 								<div className="flex items-start justify-between mb-4 gap-3 sm:gap-4">
 									<div className="flex-1 min-w-0">
 										<h3 className="text-lg sm:text-2xl font-bold text-gray-900 dark:text-white mb-2 wrap-break-words">
 											{edu.degree}
 										</h3>
-										<p className="text-base sm:text-lg text-blue-600 dark:text-blue-400 font-semibold wrap-break-word">
+										<p className="text-base sm:text-lg text-emerald-600 dark:text-emerald-400 font-semibold wrap-break-word">
 											{edu.field}
 										</p>
 									</div>
@@ -68,7 +68,7 @@ export default function Education({ education }: EducationProps) {
 													key={idx}
 													className="flex items-start gap-2 text-xs sm:text-sm text-gray-700 dark:text-gray-300"
 												>
-													<span className="w-2 h-2 rounded-full bg-blue-500 flex shrink-0 mt-1.5"></span>
+													<span className="w-2 h-2 rounded-full bg-emerald-500 flex shrink-0 mt-1.5"></span>
 													<span>{highlight}</span>
 												</li>
 											))}

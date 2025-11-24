@@ -30,18 +30,17 @@ export default function Header({ scrollToSection, personal }: HeaderProps) {
 				<div className="flex justify-between items-center h-16">
 					<button
 						onClick={() => handleNavClick("home")}
-						className="text-xl sm:text-2xl font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-blue-700 hover:to-purple-700 transition-all"
+						className="text-xl sm:text-2xl font-bold bg-linear-to-r from-emerald-600 to-amber-600 bg-clip-text text-transparent hover:from-emerald-700 hover:to-amber-700 transition-all"
 					>
 						Portfolio
-					</button>
-
+					</button>{" "}
 					{/* Desktop Navigation */}
 					<div className="hidden md:flex gap-2 lg:gap-8 items-center">
 						{navItems.map((item) => (
 							<button
 								key={item.id}
 								onClick={() => handleNavClick(item.id)}
-								className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium text-sm lg:text-base"
+								className="text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors font-medium text-sm lg:text-base"
 							>
 								{item.label}
 							</button>
@@ -50,7 +49,7 @@ export default function Header({ scrollToSection, personal }: HeaderProps) {
 							<a
 								href={personal.resume}
 								download
-								className="ml-4 px-4 py-2 bg-linear-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 flex items-center gap-2 text-sm animate-fade-in-up"
+								className="ml-4 px-4 py-2 bg-linear-to-r from-emerald-600 to-amber-600 text-white font-semibold rounded-lg hover:from-emerald-700 hover:to-amber-700 transition-all transform hover:scale-105 flex items-center gap-2 text-sm animate-fade-in-up"
 							>
 								<svg
 									className="w-4 h-4"
@@ -69,7 +68,6 @@ export default function Header({ scrollToSection, personal }: HeaderProps) {
 							</a>
 						)}
 					</div>
-
 					{/* Mobile Menu Button */}
 					<button
 						onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -109,7 +107,7 @@ export default function Header({ scrollToSection, personal }: HeaderProps) {
 								<button
 									key={item.id}
 									onClick={() => handleNavClick(item.id)}
-									className="w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium rounded-lg"
+									className="w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors font-medium rounded-lg"
 								>
 									{item.label}
 								</button>
@@ -118,7 +116,7 @@ export default function Header({ scrollToSection, personal }: HeaderProps) {
 								<a
 									href={personal.resume}
 									download
-									className="w-full text-left px-4 py-2 text-blue-600 dark:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-700 dark:hover:text-blue-300 transition-colors font-medium rounded-lg flex items-center gap-2"
+									className="w-full text-left px-4 py-2 text-emerald-600 dark:text-emerald-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors font-medium rounded-lg flex items-center gap-2"
 								>
 									<svg
 										className="w-4 h-4"

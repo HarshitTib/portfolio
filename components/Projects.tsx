@@ -31,7 +31,7 @@ export default function Projects({ projects }: ProjectsProps) {
 					<p className="text-sm sm:text-lg text-gray-600 dark:text-gray-400 px-2 animate-fade-in-up">
 						Showcasing my best work and technical expertise
 					</p>
-					<div className="w-12 sm:w-16 h-1 bg-linear-to-r from-blue-500 to-purple-600 mx-auto rounded-full mt-4 sm:mt-6"></div>
+					<div className="w-12 sm:w-16 h-1 bg-linear-to-r from-emerald-500 to-amber-600 mx-auto rounded-full mt-4 sm:mt-6"></div>
 				</div>
 
 				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
@@ -45,9 +45,8 @@ export default function Projects({ projects }: ProjectsProps) {
 							style={{ animationDelay: `${index * 100}ms` }}
 						>
 							{/* Background image or gradient */}
-							<div className="absolute inset-0 bg-linear-to-br from-blue-500 via-purple-500 to-pink-500 opacity-40"></div>
-							<div className="absolute inset-0 bg-slate-900/80"></div>
-
+							<div className="absolute inset-0 bg-linear-to-br from-emerald-500 via-teal-500 to-amber-600 opacity-40"></div>
+							<div className="absolute inset-0 bg-slate-900/80"></div>{" "}
 							{/* Content */}
 							<div className="relative h-full flex flex-col justify-between p-4 sm:p-8 z-10">
 								<div>
@@ -103,7 +102,6 @@ export default function Projects({ projects }: ProjectsProps) {
 									</div>
 								</div>
 							</div>
-
 							{/* Hover overlay */}
 							<div className="absolute inset-0 bg-linear-to-t from-slate-900/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-5"></div>
 						</div>
@@ -124,7 +122,7 @@ export default function Projects({ projects }: ProjectsProps) {
 					<div className="fixed inset-0 z-50 flex items-center justify-center p-4">
 						<div className="bg-slate-900 rounded-2xl shadow-2xl max-w-2xl w-full max-h-96 flex flex-col border border-slate-700">
 							{/* Modal Header */}
-							<div className="flex items-center justify-between p-4 sm:p-6 border-b border-slate-700 bg-linear-to-r from-blue-900/20 to-purple-900/20">
+							<div className="flex items-center justify-between p-4 sm:p-6 border-b border-slate-700 bg-linear-to-r from-emerald-900/20 to-amber-900/20">
 								<h3 className="text-lg sm:text-2xl font-bold text-white">
 									{projects[selectedProject].title}
 								</h3>

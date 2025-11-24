@@ -38,12 +38,12 @@ export default function Experience({ experience }: ExperienceProps) {
 					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
 						Professional Experience
 					</h2>
-					<div className="w-12 sm:w-16 h-1 bg-linear-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
+					<div className="w-12 sm:w-16 h-1 bg-linear-to-r from-emerald-500 to-amber-600 mx-auto rounded-full"></div>
 				</div>
 
 				<div className="relative">
 					{/* Timeline line */}
-					<div className="absolute left-4 sm:left-8 md:left-1/2 top-0 bottom-0 w-1 bg-linear-to-b from-blue-500 via-purple-500 to-pink-500 md:transform md:-translate-x-1/2"></div>
+					<div className="absolute left-4 sm:left-8 md:left-1/2 top-0 bottom-0 w-1 bg-linear-to-b from-emerald-500 via-teal-500 to-amber-600 md:transform md:-translate-x-1/2"></div>
 
 					{/* Timeline items */}
 					<div className="space-y-8 sm:space-y-12">
@@ -56,7 +56,7 @@ export default function Experience({ experience }: ExperienceProps) {
 								style={{ animationDelay: `${index * 150}ms` }}
 							>
 								{/* Timeline dot */}
-								<div className="absolute left-0 sm:left-2 md:left-1/2 top-0 md:transform md:-translate-x-1/2 w-8 sm:w-12 h-8 sm:h-12 rounded-full bg-linear-to-br from-blue-500 to-purple-600 flex items-center justify-center border-4 border-white dark:border-slate-900 animate-bounce-in">
+								<div className="absolute left-0 sm:left-2 md:left-1/2 top-0 md:transform md:-translate-x-1/2 w-8 sm:w-12 h-8 sm:h-12 rounded-full bg-linear-to-br from-emerald-500 to-amber-600 flex items-center justify-center border-4 border-white dark:border-slate-900 animate-bounce-in">
 									<span className="text-lg sm:text-xl">💼</span>
 								</div>
 
@@ -78,13 +78,13 @@ export default function Experience({ experience }: ExperienceProps) {
 															href={exp.companyWebsite}
 															target="_blank"
 															rel="noopener noreferrer"
-															className="text-sm sm:text-base text-blue-600 dark:text-blue-400 font-semibold hover:underline inline-flex items-center gap-1 w-fit"
+															className="text-sm sm:text-base text-emerald-600 dark:text-emerald-400 font-semibold hover:underline inline-flex items-center gap-1 w-fit"
 														>
 															{exp.company}
 															<span className="text-xs">↗</span>
 														</a>
 													) : (
-														<p className="text-sm sm:text-base text-blue-600 dark:text-blue-400 font-semibold">
+														<p className="text-sm sm:text-base text-emerald-600 dark:text-emerald-400 font-semibold">
 															{exp.company}
 														</p>
 													)}
@@ -95,7 +95,7 @@ export default function Experience({ experience }: ExperienceProps) {
 													)}
 												</div>
 											</div>
-											<span className="text-xs sm:text-sm font-semibold text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/30 px-3 py-1 rounded-full mt-2 sm:mt-0 whitespace-nowrap">
+											<span className="text-xs sm:text-sm font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-900/30 px-3 py-1 rounded-full mt-2 sm:mt-0 whitespace-nowrap">
 												{exp.duration}
 											</span>
 										</div>
@@ -113,7 +113,7 @@ export default function Experience({ experience }: ExperienceProps) {
 													{exp.skillsUsed.map((skill, idx) => (
 														<span
 															key={idx}
-															className="inline-block px-2 sm:px-3 py-1 text-xs sm:text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-lg"
+															className="inline-block px-2 sm:px-3 py-1 text-xs sm:text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-lg"
 														>
 															{skill}
 														</span>
@@ -133,7 +133,7 @@ export default function Experience({ experience }: ExperienceProps) {
 															key={idx}
 															className="flex items-start gap-2 sm:gap-3 text-xs sm:text-sm text-gray-700 dark:text-gray-300"
 														>
-															<span className="text-blue-500 font-bold mt-1 shrink-0">
+															<span className="text-emerald-500 font-bold mt-1 shrink-0">
 																✓
 															</span>
 															<span>{achievement}</span>
