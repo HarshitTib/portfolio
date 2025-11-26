@@ -19,10 +19,7 @@ export default function Projects({ projects }: ProjectsProps) {
 	};
 
 	return (
-		<section
-			id="projects"
-			className="py-16 sm:py-24 bg-linear-to-b from-slate-50 to-white dark:from-slate-800 dark:to-slate-900"
-		>
+		<section id="projects" className="py-16 sm:py-24 bg-projects">
 			<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="text-center mb-12 sm:mb-16 animate-fade-in-down">
 					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">

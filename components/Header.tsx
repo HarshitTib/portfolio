@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import { Personal } from "@/types/portfolio";
 
 interface HeaderProps {
@@ -45,28 +46,12 @@ export default function Header({ scrollToSection, personal }: HeaderProps) {
 								{item.label}
 							</button>
 						))}
-						{personal?.resume && (
-							<a
-								href={personal.resume}
-								download
-								className="ml-4 px-4 py-2 bg-linear-to-r from-emerald-600 to-amber-600 text-white font-semibold rounded-lg hover:from-emerald-700 hover:to-amber-700 transition-all transform hover:scale-105 flex items-center gap-2 text-sm animate-fade-in-up"
-							>
-								<svg
-									className="w-4 h-4"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth={2}
-										d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-									/>
-								</svg>
-								Resume
-							</a>
-						)}
+						<Link
+							href="/resume"
+							className="text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors font-medium text-sm lg:text-base"
+						>
+							Resume
+						</Link>
 					</div>
 					{/* Mobile Menu Button */}
 					<button
@@ -112,28 +97,26 @@ export default function Header({ scrollToSection, personal }: HeaderProps) {
 									{item.label}
 								</button>
 							))}
-							{personal?.resume && (
-								<a
-									href={personal.resume}
-									download
-									className="w-full text-left px-4 py-2 text-emerald-600 dark:text-emerald-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors font-medium rounded-lg flex items-center gap-2"
+							<Link
+								href="/resume"
+								onClick={() => setMobileMenuOpen(false)}
+								className="w-full text-left px-4 py-2 text-emerald-600 dark:text-emerald-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors font-medium rounded-lg flex items-center gap-2"
+							>
+								<svg
+									className="w-4 h-4"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
 								>
-									<svg
-										className="w-4 h-4"
-										fill="none"
-										stroke="currentColor"
-										viewBox="0 0 24 24"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth={2}
-											d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-										/>
-									</svg>
-									Resume
-								</a>
-							)}
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth={2}
+										d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+									/>
+								</svg>
+								View Resume
+							</Link>
 						</div>
 					</div>
 				)}

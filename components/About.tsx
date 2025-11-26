@@ -9,10 +9,7 @@ interface AboutProps {
 export default function About({ personal }: AboutProps) {
 	const [imageError, setImageError] = useState(false);
 	return (
-		<section
-			id="about"
-			className="py-16 sm:py-24 bg-white dark:bg-slate-900 relative"
-		>
+		<section id="about" className="py-16 sm:py-24 bg-about relative">
 			<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="text-center mb-12 sm:mb-16 animate-fade-in-down">
 					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">

@@ -16,7 +16,7 @@ export default function Skills({ skills }: SkillsProps) {
 	return (
 		<section
 			id="skills"
-			className="py-16 sm:py-24 bg-linear-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 relative overflow-hidden"
+			className="py-16 sm:py-24 bg-skills relative overflow-hidden"
 		>
 			{/* Animated background orbs */}
 			<div className="absolute inset-0 overflow-hidden pointer-events-none">

@@ -49,7 +49,7 @@ export default function Contact({ personal, socialLinks }: ContactProps) {
 	return (
 		<section
 			id="contact"
-			className="py-16 sm:py-24 bg-white dark:bg-slate-900 relative overflow-hidden"
+			className="py-16 sm:py-24 bg-contact relative overflow-hidden"
 		>
 			{/* Background decoration */}
 			<div className="absolute inset-0 overflow-hidden pointer-events-none">

@@ -10,13 +10,13 @@ export default function Hero({ personal }: HeroProps) {
 	return (
 		<section
 			id="home"
-			className="min-h-screen flex items-center justify-center bg-linear-to-br from-slate-900 via-emerald-900 to-slate-900 relative overflow-hidden pt-20"
+			className="min-h-screen flex items-center justify-center bg-hero relative overflow-hidden pt-20"
 		>
-			{/* Animated background elements */}
+			{/* Animated background elements overlay */}
 			<div className="absolute inset-0 overflow-hidden">
-				<div className="absolute w-96 h-96 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse top-1/4 left-1/4"></div>
-				<div className="absolute w-96 h-96 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse top-1/3 right-1/4 animation-delay-2000"></div>
-				<div className="absolute w-96 h-96 bg-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse bottom-1/4 left-1/3 animation-delay-4000"></div>
+				<div className="absolute w-96 h-96 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse top-1/4 left-1/4"></div>
+				<div className="absolute w-96 h-96 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse top-1/3 right-1/4 animation-delay-2000"></div>
+				<div className="absolute w-96 h-96 bg-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse bottom-1/4 left-1/3 animation-delay-4000"></div>
 			</div>
 
 			<div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
