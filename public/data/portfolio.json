@@ -143,10 +143,21 @@
 	],
 	"experience": [
 		{
+			"role": "SDE1",
+			"company": "Uniqus India Pvt. Ltd.",
+			"companyWebsite": "https://uniqus.com/",
+			"duration": "November 2025 - Present",
+			"startDate": "2025-11-24",
+			"endDate": "Present",
+			"description": "",
+			"skillsUsed": [],
+			"achievements": []
+		},
+		{
 			"role": "Engineer",
 			"company": "IDFC FIRST BANK",
 			"companyWebsite": "https://www.idfcfirstbank.com",
-			"duration": "June 2024 - November 2024",
+			"duration": "June 2024 - November 2025",
 			"startDate": "2024-06-10",
 			"endDate": "2025-11-21",
 			"description": "Contributing to the development of Thanos, an automated testing and regression platform, by designing scalable backend systems and interactive UI dashboards to enhance efficiency, stability, and user experience in large-scale QA operations.",
